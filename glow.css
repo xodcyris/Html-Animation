@@ -1,0 +1,73 @@
+body{
+    margin:0;
+    padding:0;
+    background:#262626;
+}
+ul{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  display:flex;
+}
+ul li{
+    list-style:none;
+    width:50px;
+    height:50px;
+    background:#fff;
+    border-radius:50%;
+    animation:abc 1.6s ease-in-out infinite;
+}
+ul li:nth-child(1) 
+{
+ animation-delay:-1.8s;
+ background:#FFFF00;
+ box-shadow:0px 0px 50px #FFFF00;
+}
+ul li:nth-child(2) 
+{
+ animation-delay:-1.6s;
+ background:#FF1493;
+ box-shadow:0px 0px 50px #FF1493;
+}
+ul li:nth-child(3) 
+{
+ animation-delay:-1.4s;
+ background:#00FF00;
+ box-shadow:0px 0px 50px #00FF00;
+}
+ul li:nth-child(4) 
+{
+ animation-delay:-1.2s;
+ background:rgb(3, 167, 231);
+ box-shadow:0px 0px 50px rgb(3, 167, 231);
+}
+ul li:nth-child(5) 
+{
+ animation-delay:-1s;
+ background:#FF0000;
+ box-shadow:0px 0px 50px #FF0000;
+}
+ul li:nth-child(6) 
+{
+ animation-delay:-0.8s;
+ background:white;
+ box-shadow:0px 0px 50px white;
+}
+ul li:nth-child(7) 
+{
+ animation-delay:-0.6s;
+ background:orangered;
+ box-shadow:0px 0px 50px orangered;
+}
+@keyframes abc
+{
+ 0%,40%,100%{
+            transform:scale(0.2);
+ }
+ 20%{
+     transform:scale(1);
+ }
+}

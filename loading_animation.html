@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+body{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+}
+.main{
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%,-50%);
+}
+div{
+    border-radius:60%;
+}
+.div1,.div3,.div5
+{
+      border-width:4px;
+      border-style:solid;
+      border-color:red #fff red #fff;
+      animation:ani1 1s infinite linear;
+}
+.div2,.div4,.div6
+{
+     border-width:4px;
+     border-style:solid;
+     border-color:#fff blue #fff blue;
+     animation:ani2 1s infinite linear;
+}
+.div1{
+      width:50px;
+      height:50px;
+
+}
+.div2{
+      width:70px;
+      height:70px;
+      padding:2px;
+      margin:-70px -12px;
+}
+.div3{
+      width:90px;
+      height:90px;
+      margin:-90px -20px;
+}
+.div4{
+      width:110px;
+      height:110px;
+      padding:2px;
+      margin:-110px -32px;
+}
+.div5{
+      width:130px;
+      height:130px;
+      margin:-130px -40px;
+}
+.div6{
+      width:150px;
+      height:150px;
+      padding:2px;
+      margin:-150px -50px;
+}
+@keyframes ani1
+{
+    0%{
+       transform:rotate(0deg);
+    }
+    100%{
+       transform:rotate(360deg);
+    }
+}
+@keyframes ani2
+{
+    0%{
+       transform:rotate(0deg);
+    }
+    100%{
+       transform:rotate(-360deg);
+    }
+}
+</style>
+</head>
+<body>
+<div class="main" >
+<div class="div1"></div>
+<div class="div2" ></div>
+<div class="div3"></div>
+<div class="div4"></div>
+<div class="div5" ></div>
+<div class="div6" ></div>
+</div>
+</body>
+</html>
